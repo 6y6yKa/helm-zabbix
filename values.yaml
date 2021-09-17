@@ -179,7 +179,8 @@ zabbixweb:
   POSTGRES_DB: zabbix
   service:
     # -- Type of service for Zabbix web
-    type: NodePort
+    # -- NodePort
+    type: ClusterIP
     # -- Port to expose service
     port: 80
     # -- Port of application pod
